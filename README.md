@@ -31,11 +31,16 @@ Edge Detection Operators which can be used are of two types:
 It comes under Gaussian edge detection Canny Operator: It is a gaussian-based operator in detecting edges. This operator is not susceptible to noise. It extracts image features without affecting or altering the feature. Canny edge detector have advanced algorithms derived from the previous work of Laplacian of Gaussian operator.
 
 The Canny edge detection algorithm is composed of 5 steps:
-●	Noise reduction using Gaussian Filter
-●	Gradient calculation using Sobel’s operator
-●	Non-maximum suppression for making the edges thin
-●	Double threshold
-●	Edge Tracking by Hysteresis.
+
+        ●	Noise reduction using Gaussian Filter
+
+        ●	Gradient calculation using Sobel’s operator
+
+        ●	Non-maximum suppression for making the edges thin
+
+        ●	Double threshold
+
+        ●	Edge Tracking by Hysteresis.
 
 
 2)SELECTING REGION OF INTEREST USING MASKING-
@@ -47,6 +52,7 @@ There are a lot of unnecessary edges that we don’t require for our image. Henc
 The Hough Transform is a method that is used in image processing to detect any shape, if that shape can be represented in mathematical form. It can detect the shape even if it is broken or distorted a little bit. 
 
 WORKING-
+
         ●	Image is first converted into binary image using thresholding. 
         ●	Each point (d, T) in Hough space matches to a line at angle T and distance d from the origin in the data space. 
         ●	The value of a function in Hough space gives the point density along a line in the data space.
